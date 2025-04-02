@@ -1,0 +1,28 @@
+Package: MR2
+Title: Bayesian multi-response Mendelian randomisation
+Version: 0.1.1
+Date: 2025-03-01
+Authors@R: as.person(c(
+    "Leonardo Bottolo <lb664@cam.ac.uk> [aut, cre]", 
+    "Verena Zuber <v.zuber@imperial.ac.uk> [aut, ctb]"))
+Maintainer: Leonardo Bottolo <lb664@cam.ac.uk>
+Description: This package performs two-sample summary-level data Bayesian multi-response Mendelian randomisation with 
+    the selection of important exposures shared or distinct across responses. Post-processing and selection of exposures 
+    based on an in-house FDR implementation are also provided.
+BugReports: https://github.com/lb664/MR2/issues
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Imports: 
+    BDgraph,
+    graphics,
+    grDevices,
+    MASS,
+    MCMCpack,
+    mvnfast,
+    mvtnorm,
+    Rdpack,
+    truncnorm,
+    utils
