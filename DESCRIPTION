@@ -1,0 +1,35 @@
+Package: MR2
+Type: Package
+Title: Bayesian multi-response Mendelian randomisation
+Version: 0.2.0
+Date: 2026-10-25
+Authors@R: c(
+    person("Leonardo", "Bottolo", email = "lb664@cam.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6381-2327")),
+    person("Verena", "Zuber", email = "v.zuber@imperial.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-9827-1877")))
+Maintainer: Leonardo Bottolo <lb664@cam.ac.uk>
+Description: This package performs two-sample summary-level data Bayesian multi-response Mendelian randomisation with the selection of important exposures shared or distinct across responses. Post-processing and selection of exposures based on an in-house FDR implementation are also provided. The graphical-model Markov chain Monte Carlo engine can be accelerated with a compiled Rcpp/RcppArmadillo implementation.
+URL: https://github.com/lb664/MR2
+BugReports: https://github.com/lb664/MR2/issues
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Roxygen: list(markdown = TRUE)
+RdMacros: Rdpack
+Depends:
+    R (>= 3.5.0)
+Imports:
+    BDgraph,
+    graphics,
+    grDevices,
+    MASS,
+    mvnfast,
+    Rcpp,
+    Rdpack,
+    stats,
+    utils
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+Config/roxygen2/version: 8.0.0
